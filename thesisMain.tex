@@ -1,0 +1,128 @@
+\documentclass[12pt,a4paper]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% Margins
+\usepackage[marginpar=2cm, top=3cm, bottom=4cm]{geometry}
+
+%cite
+\usepackage{natbib}
+
+% ams packages
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+% chem formulas
+%\usepackage{chemist}
+
+% list of tables, list of figs, index in ToC
+\usepackage{tocbibind}
+
+% index
+\usepackage{makeidx}
+\makeindex
+
+% images
+\usepackage{graphicx}
+
+% pdfs
+\usepackage{pdfpages}
+
+% pretty font
+\usepackage{lmodern}
+
+% table packages
+\usepackage{longtable} 
+\usepackage{tabularx} % specified width
+\usepackage{array} % prettier
+
+\usepackage{lipsum} 
+
+\begin{document}
+
+
+\includepdf{thesisFront.pdf}
+
+
+%Abstract
+\newpage
+\noindent 
+\textbf{Abstract :}
+\vskip 1cm
+
+
+
+
+%Acknowledgments
+\newpage
+\emph{Acknowledgments}
+
+
+\lipsum[1]
+
+
+\tableofcontents
+
+\listoffigures
+
+
+\listoftables
+
+
+
+
+%Introduction
+\chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
+
+\lipsum[1-2]
+
+\part{[Part title]}
+
+\chapter{[Chapter title]}
+
+\section{[Section title]}
+
+\lipsum[1]
+
+\subsection{[Sub section title]}
+
+\lipsum[1]
+
+\paragraph{Lorem ipsum dolor} sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+
+At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+
+\subparagraph{Lorem ipsum dolor} sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+
+At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua \citep{hodgkin1952quantitative}.
+
+
+
+\part{[Part title]}
+
+\chapter{[Chapter title]}
+
+\section{[Section title]}
+
+\subsection{[Sub section title]}
+
+
+\backmatter
+
+\chapter{Conclusion}
+
+\bibliographystyle{plain}
+\bibliography{biblio}
+\nocite{hubel1962receptive}
+\appendix
+
+\chapter{Appendix 1}
+
+
+
+\printindex 
+
+
+\end{document}
